@@ -6,12 +6,43 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f58a3f2d-67df-43f3-b224-59a35ed0cf02" name="Default Changelist" comment="" />
+    <list default="true" id="f58a3f2d-67df-43f3-b224-59a35ed0cf02" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/Chart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CodeQuality_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CodeQuality_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/CSS/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/CSS/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/WEB-INF/classes/IT17152938/Contoller/QualityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/WEB-INF/classes/IT17152938/Contoller/QualityController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/WEB-INF/classes/IT17152938/Service/FileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/WEB-INF/classes/IT17152938/Service/FileReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/WEB-INF/classes/IT17152938/Service/NestingCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/WEB-INF/classes/IT17152938/Service/NestingCounter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/WEB-INF/classes/IT17152938/Servlet/ServletFileUploard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/WEB-INF/classes/IT17152938/Servlet/ServletFileUploard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/js/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/js/popper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IT17152938/Contoller/QualityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IT17152938/Contoller/QualityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IT17152938/Service/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IT17152938/Service/FileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/IT17152938/Contoller/QualityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/IT17152938/Contoller/QualityController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/IT17152938/Service/FileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/IT17152938/Service/FileReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/IT17152938/Service/NestingCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/IT17152938/Service/NestingCounter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/IT17152938/Servlet/ServletFileUploard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/IT17152938/Servlet/ServletFileUploard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/CSS/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/CSS/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/popper.min.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="ComposerSettings">
     <execution>
@@ -41,6 +72,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -56,12 +90,17 @@
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2" />
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1P0YiE8ZEJ4tDYOB7zdpi71AT4q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$/src/main/java/IT17152938/Service" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -70,17 +109,18 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\y3s2\SPM\Assiment01\gitpush\CodeQuality\web\js" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/web/CSS" />
       <recent name="$PROJECT_DIR$/web/js" />
-      <recent name="$PROJECT_DIR$/src/main/java/IT17152938/Service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -169,7 +209,7 @@
         </option>
       </method>
     </configuration>
-    <configuration name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.22" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.45" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="CodeQuality:war exploded">
@@ -256,11 +296,36 @@
       <workItem from="1565012608477" duration="8565000" />
       <workItem from="1565070886850" duration="15420000" />
       <workItem from="1565101024618" duration="4644000" />
-      <workItem from="1565105739963" duration="185000" />
+      <workItem from="1565105739963" duration="905000" />
+      <workItem from="1565157434598" duration="684000" />
+      <workItem from="1565234765919" duration="59000" />
+      <workItem from="1565329825125" duration="294000" />
+      <workItem from="1565420913279" duration="1738000" />
+      <workItem from="1565436144489" duration="17000" />
+      <workItem from="1565504291098" duration="482000" />
+      <workItem from="1565504793080" duration="1534000" />
+      <workItem from="1565509733451" duration="599000" />
+      <workItem from="1565510644528" duration="1167000" />
+      <workItem from="1565514593342" duration="1250000" />
+      <workItem from="1565670165279" duration="138000" />
+      <workItem from="1567726355299" duration="5819000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

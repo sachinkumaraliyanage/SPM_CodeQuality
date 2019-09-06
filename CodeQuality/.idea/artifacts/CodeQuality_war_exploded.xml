@@ -13,6 +13,7 @@
           <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.0" />
         </element>
       </element>
+      <element id="library" level="project" name="Java EE 6-Java EE 6" />
     </root>
   </artifact>
 </component>

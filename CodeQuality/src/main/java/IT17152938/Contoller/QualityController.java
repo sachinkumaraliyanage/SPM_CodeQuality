@@ -9,6 +9,8 @@ public class QualityController {
     public JsonArray getQuality(String file){
         FileReader fileReader=new FileReader(file);
         NestingCounter nestig=new NestingCounter(fileReader);
+//        InheritanceCount inhe=new InheritanceCount(fileReader);
+//        Size size=new Size(fileReader);
 
 
         JsonObject res2 = new JsonObject();
@@ -20,14 +22,19 @@ public class QualityController {
             JsonObject res = new JsonObject();
             res.addProperty("code", fileReader.getFileFormat2().get(i));
             res.addProperty("nextcount", nestig.getLineNestingCount().get(i));
+//            res.addProperty("inheritcount", inhe.getInherite().get(i));
+//            res.addProperty("sizecount", size.getAllcount().get(i));
+//            res.addProperty("sizedis", size.getAll().get(i));
 
 
             data.add(res);
 
         }
 
+        System.out.println(data.toString());
 
         res2.addProperty("data", data.toString());
+
 
 
         return data;

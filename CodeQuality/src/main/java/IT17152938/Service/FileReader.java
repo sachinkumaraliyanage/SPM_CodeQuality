@@ -80,13 +80,13 @@ public class FileReader {
                 tabcouint++;
                 tab = "";
                 for (int i = 0; i < tabcouint; i++) {
-                    tab += "&nbsp&nbsp&nbsp";
+                    tab += "&nbsp&nbsp&nbsp&nbsp&nbsp";
                 }
             } else if ("}".equalsIgnoreCase(line.substring(0, 1))) {
                 tabcouint--;
                 tab = "";
                 for (int i = 0; i < tabcouint; i++) {
-                    tab += "&nbsp&nbsp&nbsp";
+                    tab += "&nbsp&nbsp&nbsp&nbsp&nbsp";
                 }
                 this.fileFormat2.add(tab + line);
             } else {
@@ -98,6 +98,7 @@ public class FileReader {
 
     public void readfile() {
         String full = "";
+
         try {
             Scanner s = new Scanner(new File(this.filepath));
             boolean malti = false;
@@ -107,27 +108,41 @@ public class FileReader {
                 this.file.add(readLine);
                 //format file
                 readLine = readLine.replaceAll("\t", "");
+
 //                readLine=readLine.replaceAll(" ","");
                 int commentstart = readLine.indexOf('/');
 
-                if (commentstart != -1) {
 
-                    if ('/' == readLine.charAt(commentstart + 1)) {
-                        readLine = readLine.substring(0, commentstart);
-                    } else if ('*' == readLine.charAt(commentstart + 1)) {
-                        readLine = "";
-                        malti = true;
-                    } else if ('*' == readLine.charAt(commentstart - 1)) {
-                        readLine = readLine = readLine.substring(commentstart + 1, readLine.length());
-                        ;
-                        malti = false;
+                if (commentstart != -1) {
+//                    System.out.println(readLine);
+//                    System.out.println(commentstart);
+                    if (readLine.length() > commentstart + 1) {
+                        if ('/' == readLine.charAt(commentstart + 1)) {
+                            readLine = readLine.substring(0, commentstart);
+                        } else if ('*' == readLine.charAt(commentstart + 1)) {
+                            readLine = "";
+                            malti = true;
+                        } else if (commentstart - 1 >= 0) {
+                            if ('*' == readLine.charAt(commentstart - 1)) {
+                                readLine = readLine = readLine.substring(commentstart + 1, readLine.length());
+                                ;
+                                malti = false;
+                            }
+                        }
+                    } else if (commentstart - 1 >= 0) {
+                        if ('*' == readLine.charAt(commentstart - 1)) {
+                            readLine = readLine = readLine.substring(commentstart + 1, readLine.length());
+
+                            malti = false;
+                        }
                     }
+
                 }
                 if (malti) {
                     readLine = "";
                 }
 
-
+//                System.out.println(readLine);
                 this.fileNoSpase.add(readLine);
 
                 full += readLine;
@@ -185,6 +200,13 @@ public class FileReader {
 //            int br=0;
             while (brstrt != -1) {
                 if (line.length() > 2) {
+                    String p=line.replaceAll(" ","");
+                    if(p.length()>2){
+                        if (p.substring(0, 3).equalsIgnoreCase("for")) {
+//                        this.fileFormat.add(line);
+                            break;
+                        }
+                    }
                     if (line.substring(0, 3).equalsIgnoreCase("for")) {
 //                        this.fileFormat.add(line);
                         break;
@@ -210,15 +232,26 @@ public class FileReader {
 
             int i = 0;
 
-            while (chline.charAt(i) == ' ') {
-                i++;
+            if(chline.length()>0){
+//                System.out.println(chline);
+                while (chline.charAt(i) == ' ') {
+                    if(chline.length()==i+1){
+                        break;
+                    }
+//                    System.out.println(chline);
+//                    System.out.println(i);
+                    i++;
+                }
+//                System.out.println("out");
             }
+
+
 
 
             this.fileFormat.add(chline.substring(i, chline.length()));
 
         }
-
+        this.fileFormat.removeAll(Arrays.asList("", null, " "));
 
     }
 
