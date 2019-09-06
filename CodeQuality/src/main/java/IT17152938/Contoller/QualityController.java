@@ -5,10 +5,12 @@ import IT17152938.Service.NestingCounter;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
+import java.util.ArrayList;
+
 public class QualityController {
     public JsonArray getQuality(String file){
         FileReader fileReader=new FileReader(file);
-        NestingCounter nestig=new NestingCounter(fileReader);
+        ArrayList<String> nestig=getNextingcount(fileReader);
 //        InheritanceCount inhe=new InheritanceCount(fileReader);
 //        Size size=new Size(fileReader);
 
@@ -21,7 +23,7 @@ public class QualityController {
             // Create new JSON Object
             JsonObject res = new JsonObject();
             res.addProperty("code", fileReader.getFileFormat2().get(i));
-            res.addProperty("nextcount", nestig.getLineNestingCount().get(i));
+            res.addProperty("nextcount", nestig.get(i));
 //            res.addProperty("inheritcount", inhe.getInherite().get(i));
 //            res.addProperty("sizecount", size.getAllcount().get(i));
 //            res.addProperty("sizedis", size.getAll().get(i));
@@ -38,5 +40,10 @@ public class QualityController {
 
 
         return data;
+    }
+
+
+    public ArrayList<String> getNextingcount(FileReader fileReader){
+        return new NestingCounter(fileReader).getLineNestingCount();
     }
 }

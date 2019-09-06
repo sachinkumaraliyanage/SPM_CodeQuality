@@ -7,33 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f58a3f2d-67df-43f3-b224-59a35ed0cf02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/Chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CodeQuality_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CodeQuality_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/IT17152938/Contoller/QualityControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CodeQuality2.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/CSS/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/CSS/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/WEB-INF/classes/IT17152938/Contoller/QualityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/WEB-INF/classes/IT17152938/Contoller/QualityController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/WEB-INF/classes/IT17152938/Service/FileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/WEB-INF/classes/IT17152938/Service/FileReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/WEB-INF/classes/IT17152938/Service/NestingCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/WEB-INF/classes/IT17152938/Service/NestingCounter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/WEB-INF/classes/IT17152938/Servlet/ServletFileUploard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/WEB-INF/classes/IT17152938/Servlet/ServletFileUploard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/js/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/js/popper.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/IT17152938/Contoller/QualityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IT17152938/Contoller/QualityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/IT17152938/Service/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IT17152938/Service/FileReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/IT17152938/Contoller/QualityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/IT17152938/Contoller/QualityController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/IT17152938/Service/FileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/IT17152938/Service/FileReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/IT17152938/Service/NestingCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/IT17152938/Service/NestingCounter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/IT17152938/Servlet/ServletFileUploard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/IT17152938/Servlet/ServletFileUploard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/CSS/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/CSS/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/popper.min.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +49,8 @@
         <option value="Class" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="TestNG Test Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -94,11 +76,17 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1P0YiE8ZEJ4tDYOB7zdpi71AT4q" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$/src/main/java/IT17152938/Service" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -115,6 +103,12 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="IT17152938.Contoller" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project\y3s2\SPM\Assiment01\gitpush\CodeQuality\web\js" />
       <recent name="$PROJECT_DIR$/src/main/java" />
@@ -135,7 +129,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.QualityControllerTest">
+    <configuration name="QualityControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodeQuality" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IT17152938.Contoller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="IT17152938.Contoller" />
+      <option name="MAIN_CLASS_NAME" value="IT17152938.Contoller.QualityControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.22" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8989/CodeQuality_war_exploded/" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -282,6 +291,15 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.index.jsp" />
+      <item itemvalue="JUnit.QualityControllerTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.QualityControllerTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -308,8 +326,16 @@
       <workItem from="1565510644528" duration="1167000" />
       <workItem from="1565514593342" duration="1250000" />
       <workItem from="1565670165279" duration="138000" />
-      <workItem from="1567726355299" duration="5819000" />
+      <workItem from="1567726355299" duration="12378000" />
     </task>
+    <task id="LOCAL-00001" summary="finsh cnc">
+      <created>1567732256731</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567732256731</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,5 +353,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="finsh cnc" />
+    <option name="LAST_COMMIT_MESSAGE" value="finsh cnc" />
   </component>
 </project>
