@@ -7,13 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f58a3f2d-67df-43f3-b224-59a35ed0cf02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/IT17152938/Contoller/QualityControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CodeQuality2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/IT17056212/Size.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/CSS/fixedHeader.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/dataTables.fixedHeader.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/CSS/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/CSS/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/WEB-INF/classes/IT17152938/Contoller/QualityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/WEB-INF/classes/IT17152938/Contoller/QualityController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/IT17152938/Contoller/QualityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IT17152938/Contoller/QualityController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/IT17152938/Contoller/QualityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/IT17152938/Contoller/QualityController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/CSS/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/CSS/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CodeQuality2.zip" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,11 +52,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TestNG Test Class" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="TestNG Test Class" />
-        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -129,7 +135,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.QualityControllerTest">
+  <component name="RunManager" selected="Tomcat Server.index.jsp">
     <configuration name="QualityControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodeQuality" />
       <extension name="coverage">
@@ -292,8 +298,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Tomcat Server.index.jsp" />
       <item itemvalue="JUnit.QualityControllerTest" />
+      <item itemvalue="Tomcat Server.index.jsp" />
     </list>
     <recent_temporary>
       <list>
@@ -326,7 +332,13 @@
       <workItem from="1565510644528" duration="1167000" />
       <workItem from="1565514593342" duration="1250000" />
       <workItem from="1565670165279" duration="138000" />
-      <workItem from="1567726355299" duration="12378000" />
+      <workItem from="1567726355299" duration="12587000" />
+      <workItem from="1567776395682" duration="3365000" />
+      <workItem from="1567947559152" duration="303000" />
+      <workItem from="1567948066529" duration="77000" />
+      <workItem from="1567948189072" duration="556000" />
+      <workItem from="1567948760345" duration="621000" />
+      <workItem from="1568352566767" duration="2524000" />
     </task>
     <task id="LOCAL-00001" summary="finsh cnc">
       <created>1567732256731</created>
@@ -335,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567732256731</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add junit test">
+      <created>1567743364186</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567743364186</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,6 +376,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="finsh cnc" />
-    <option name="LAST_COMMIT_MESSAGE" value="finsh cnc" />
+    <MESSAGE value="add junit test" />
+    <option name="LAST_COMMIT_MESSAGE" value="add junit test" />
   </component>
 </project>

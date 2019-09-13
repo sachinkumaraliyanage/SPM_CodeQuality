@@ -1,5 +1,6 @@
 package IT17152938.Contoller;
 
+import IT17056212.Size;
 import IT17152938.Service.FileReader;
 import IT17152938.Service.NestingCounter;
 import com.google.gson.JsonArray;
@@ -12,7 +13,8 @@ public class QualityController {
         FileReader fileReader=new FileReader(file);
         ArrayList<String> nestig=getNextingcount(fileReader);
 //        InheritanceCount inhe=new InheritanceCount(fileReader);
-//        Size size=new Size(fileReader);
+        ArrayList<Integer>sizecount=getAllcountSize(fileReader);
+        ArrayList<String>sizeAll=getAllSize(fileReader);
 
 
         JsonObject res2 = new JsonObject();
@@ -25,10 +27,11 @@ public class QualityController {
             res.addProperty("code", fileReader.getFileFormat2().get(i));
             res.addProperty("nextcount", nestig.get(i));
 //            res.addProperty("inheritcount", inhe.getInherite().get(i));
-//            res.addProperty("sizecount", size.getAllcount().get(i));
+            res.addProperty("sizecount", sizecount.get(i).toString());
+            res.addProperty("sizeall", sizeAll.get(i).toString());
 //            res.addProperty("sizedis", size.getAll().get(i));
 
-
+            System.out.println();
             data.add(res);
 
         }
@@ -45,5 +48,13 @@ public class QualityController {
 
     public ArrayList<String> getNextingcount(FileReader fileReader){
         return new NestingCounter(fileReader).getLineNestingCount();
+    }
+
+    public ArrayList<Integer> getAllcountSize(FileReader fileReader){
+        return new Size(fileReader).getAllcount();
+    }
+
+    public ArrayList<String> getAllSize(FileReader fileReader){
+        return new Size(fileReader).getAll();
     }
 }
