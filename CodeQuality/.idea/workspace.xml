@@ -6,21 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f58a3f2d-67df-43f3-b224-59a35ed0cf02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/IT17056212/Size.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/CSS/fixedHeader.dataTables.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/dataTables.fixedHeader.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/CSS/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/CSS/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/WEB-INF/classes/IT17152938/Contoller/QualityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/WEB-INF/classes/IT17152938/Contoller/QualityController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeQuality_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/IT17152938/Contoller/QualityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IT17152938/Contoller/QualityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/IT17152938/Contoller/QualityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/IT17152938/Contoller/QualityController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/CSS/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/CSS/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodeQuality2.zip" beforeDir="false" />
-    </list>
+    <list default="true" id="f58a3f2d-67df-43f3-b224-59a35ed0cf02" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,7 +324,7 @@
       <workItem from="1567948066529" duration="77000" />
       <workItem from="1567948189072" duration="556000" />
       <workItem from="1567948760345" duration="621000" />
-      <workItem from="1568352566767" duration="2524000" />
+      <workItem from="1568352566767" duration="2825000" />
     </task>
     <task id="LOCAL-00001" summary="finsh cnc">
       <created>1567732256731</created>
@@ -354,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567743364186</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix head for data table">
+      <created>1568355260109</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1568355260109</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,6 +370,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="finsh cnc" />
     <MESSAGE value="add junit test" />
-    <option name="LAST_COMMIT_MESSAGE" value="add junit test" />
+    <MESSAGE value="fix head for data table" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix head for data table" />
   </component>
 </project>
