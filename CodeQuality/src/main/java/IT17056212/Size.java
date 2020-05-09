@@ -37,6 +37,8 @@ public class Size {
     ArrayList<Integer> countMopratars = new ArrayList<Integer>();
     ArrayList<Integer> countText = new ArrayList<Integer>();
     ArrayList<Integer> countAssignopratars = new ArrayList<Integer>();
+    ArrayList<String> classes = new ArrayList<String>();
+    ArrayList<Integer> classesCount = new ArrayList<Integer>();
 
     ArrayList<String> meth = new ArrayList<String>();
     ArrayList<Integer> methcount = new ArrayList<Integer>();
@@ -50,7 +52,7 @@ public class Size {
 
 
     public Size(FileReader f) {
-        System.out.println("//////////////////////////////awoooooooo");
+
         setFr(f);
         method();
         variabal();
@@ -63,6 +65,15 @@ public class Size {
         getfullList();
     }
 
+    public ArrayList<Integer> getLineAssignmentCount() {
+        return countAssignopratars;
+    }
+    public ArrayList<Integer> getLineNoCount() {
+        return countNumeric;
+    }
+    public ArrayList<Integer> getTextCount() {
+        return countText;
+    }
     public void setFr(FileReader fr) {
         this.fr = fr;
     }
@@ -286,7 +297,7 @@ public class Size {
         int j = i;
         String t = "";
         String s = " ";
-        String[] ops = {" void ", "double", "int", "float", "String", "long", "printf ", "println", "cout ", "cin ", "if ", "for ", "while ", "switch ", "case ", "private ", "protected ", " interface ", " implements ", "synchronized ", " final ", "package ", "continue ", "default ", " extends "};
+        String[] ops = {" void ", "double", "int", "float", "String", "long", "printf ", "cout ", "cin ", "if ", "for ", "while ", "switch ", "case ", "private ", "protected ", " interface ", " implements ", "synchronized ", " final ", "package ", "continue ", "default ", " extends ","string"};
         for (String op : ops) {
 
             i = i + count(line, op);
@@ -367,6 +378,34 @@ public class Size {
         this.text.add(s);
         this.countText.add(i);
         return i;
+    }
+
+    public int searchClasses(String line){
+        int i=0;
+
+
+        String s = " ";
+        String fullText=line;
+        String [] strWords = fullText.split("\\s");
+        for(String strWord:strWords){
+            if(strWord.contains("Exception")){
+                String [] word = strWord.split("\\(");
+                s = s.concat(",").concat(word[1]);
+                i++;
+
+            }
+        }
+        s = s.substring(1);
+        if (s.length() != 0) {
+            s = s.substring(1);
+        }
+        //System.out.println(s);
+        this.classes.add(s);
+        this.classesCount.add(i);
+
+        return i;
+
+
     }
 
     public int num(String line) {
@@ -548,6 +587,7 @@ public class Size {
         i = i + this.keyWards(l);
         i = i + this.num(l);
         i = i + this.manipulators(l);
+        i = i + this.searchClasses(l);
         i = i + this.textInsideDQ(line);
         // i=i+methodVariables(line);
         // i=i+method(line);
@@ -605,8 +645,12 @@ public class Size {
             if (!this.meth.get(i).equalsIgnoreCase("")) {
                 a += "," + this.meth.get(i) + " ";
             }
+            if (!this.classes.get(i).equalsIgnoreCase("")) {
+                a += "," + this.classes.get(i) + " ";
+            }
 
-            int b = this.countaopratars.get(i) + this.countlopratars.get(i) + this.countkeyward.get(i) + this.countRopratars.get(i) + this.countrefDefkeyward.get(i) + this.countbwopratars.get(i) + this.countMopratars.get(i) + this.countAssignopratars.get(i) + this.countManip.get(i) + this.countNumeric.get(i) + this.countText.get(i) + this.methcount.get(i) + this.varicount.get(i);
+
+            int b = this.countaopratars.get(i) + this.countlopratars.get(i) + this.countkeyward.get(i) + this.countRopratars.get(i) + this.countrefDefkeyward.get(i) + this.countbwopratars.get(i) + this.countMopratars.get(i) + this.countAssignopratars.get(i) + this.countManip.get(i) + this.countNumeric.get(i) + this.countText.get(i) + this.methcount.get(i) + this.varicount.get(i)+ this.classesCount.get(i);
 
             int c = this.countaopratars.get(i) + this.countlopratars.get(i) + this.countkeyward.get(i) + this.countRopratars.get(i) + this.countbwopratars.get(i) + this.countMopratars.get(i) + this.countAssignopratars.get(i) + this.countManip.get(i) + this.countNumeric.get(i) + this.countText.get(i);
 
@@ -779,7 +823,10 @@ public class Size {
                             }
                         }
                         if (!ch2) {
-                            this.va.add(v);
+                            Boolean checkInt=checkWhetherNo(v);
+                            if(checkInt==false) {
+                                this.va.add(v);
+                            }
                         }
 
                     }
@@ -794,6 +841,18 @@ public class Size {
         }
 
 
+    }
+
+    public Boolean checkWhetherNo(String no){
+
+        try
+        {
+            Integer.parseInt(no);
+            return true;
+        } catch (NumberFormatException ex)
+        {
+            return false;
+        }
     }
 
     public void addtova(ArrayList<String> arr) {
@@ -835,7 +894,10 @@ public class Size {
                                 }
                             }
                             if (!ch2) {
-                                va.add(h[o]);
+                                Boolean checkInt=checkWhetherNo(h[o]);
+                                if(checkInt==false) {
+                                    va.add(h[o]);
+                                }
                             }
                         }
                     }

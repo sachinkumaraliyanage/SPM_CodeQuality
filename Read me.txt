@@ -1,0 +1,15 @@
+Developed By:-
+
+1.IT16178700 – D.I.K. Rajapakshe 
+2.IT17018760 – M.P.P. Shamil
+3.IT17152938 – S.K. Liyanage
+4.IT17056212 – P.M.C.P. Paththinisekara
+
+
+These requirements must met to run this programme.
+
+1.	Java JDK 8 or above version.
+2.	Tomcat server 8.5 or above version.
+3.	This was developed using Intellij IDEA you will require Intellij IDEA to run the code.
+
+Or If you have the java 8+ runtime environment and tomcat 8.5+ version you can just execute the WAR file instead.

@@ -12,8 +12,6 @@
     <link rel="stylesheet" type="text/css" href="CSS/jquery.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="CSS/dataTables.bootstrap.min.css">
-
-
   <link rel="stylesheet" type="text/css" href="CSS/fixedHeader.dataTables.min.css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/popper.min.js"></script>
@@ -27,7 +25,6 @@
     <script src="js/buttons.html5.min.js"></script>
     <script src="js/buttons.print.min.js"></script>
     <script src="js/Chart.js"></script>
-
   <script src="js/dataTables.fixedHeader.min.js"></script>
 
 
@@ -113,10 +110,16 @@
     });
 
     function loadetable(data) {
-
+        document.getElementById("chart-0").innerHTML = "";
         let nestchart = new Array();
         let sizecountchart = new Array();
         let lines = new Array();
+        let inhechart=new Array();
+        let ctcchart=new Array();
+        let twchart=new Array();
+        let cpschart=new Array();
+        let crchart=new Array();
+        let cp=0;
         $.ajax({
             url: 'ServletFileUploard',
             type: 'POST',
@@ -132,13 +135,64 @@
                 $("#example > tbody").html("");
 
                 for (var i = 0; i < data.length; i++) {
+
+
                     lines.push('L:' + (i + 1));
                     if (data[i].nextcount == "") {
                         nestchart.push(0);
                     } else {
                         nestchart.push(parseInt(data[i].nextcount, 10));
                     }
+
+                    if (data[i].inheritcount == "") {
+                        inhechart.push(0);
+                    } else {
+                        inhechart.push(parseInt(data[i].inheritcount, 10));
+                    }
+                    if (data[i].ctc == "") {
+                        ctcchart.push(0);
+                    } else {
+                        ctcchart.push(parseInt(data[i].ctc, 10));
+                    }
+
+                    let si="";
+                    if (data[i].sizecount != 0) {
+                        si=data[i].sizecount;
+                    }
+
+
                     sizecountchart.push(data[i].sizecount);
+
+
+
+                    let tw=ctcchart[ctcchart.length-1]+nestchart[nestchart.length-1]+inhechart[inhechart.length-1];
+                    twchart.push(tw);
+
+                    let cps =tw*sizecountchart[sizecountchart.length-1];
+                    cpschart.push(cps);
+
+                    let cr=0;
+
+                    if (data[i].re == false) {
+                        cr=cps*2;
+                        crchart.push(cr);
+                    }else{
+                        cr="";
+                        crchart.push(0);
+                    }
+
+                    cp=cp+cps+cr;
+                    if(cps==0){
+                        cps="";
+                    }
+                    if(tw==0){
+                        tw="";
+                    }
+                    if(cr==0){
+                        cr="";
+                    }
+
+
                     var tab = '';
                     tab += "<tr class='table-info text-dark'>";
                     tab += "<td>";
@@ -151,29 +205,40 @@
                     tab += data[i].sizeall;
                     tab += "</td>";
                     tab += "<td>";
-                    tab += data[i].sizecount;
+                    tab += si;
                     tab += "</td>";
                     tab += "<td>";
-                    tab += "ctc";
+                    tab += data[i].ctc;
                     tab += "</td>";
                     tab += "<td>";
                     tab += data[i].nextcount;
                     tab += "</td>";
                     tab += "<td>";
-                    tab += "ci";
+                    tab += data[i].inheritcount;
                     tab += "</td>";
                     tab += "<td>";
-                    tab += "tw";
+                    tab += tw;
                     tab += "</td>";
                     tab += "<td>";
-                    tab += "cps";
+                    tab += cps;
                     tab += "</td>";
                     tab += "<td>";
-                    tab += "cr";
+                    tab += cr;
                     tab += "</td>";
                     tab += "</tr>";
                     $('#example > tbody').append(tab);
                 }
+
+                let tabtotal="";
+                tabtotal+="<tr  class='table-danger text-dark'>";
+                tabtotal+="<td align='center' colspan='3'>";
+                tabtotal+="Cp";
+                tabtotal+="</td>";
+                tabtotal+="<td align='center' colspan='7'>";
+                tabtotal+=cp;
+                tabtotal+="</td>";
+                tabtotal+="</tr>";
+                $('#example > tbody').append(tabtotal);
 
                 var options = {
                     maintainAspectRatio: false,
@@ -222,6 +287,36 @@
                             data: sizecountchart,
                             label: 'Cs',
                             fill: false
+                        },{
+                            backgroundColor: '#FAFD7E',
+                            borderColor: '#F7FE01',
+                            data: inhechart,
+                            label: 'Ci',
+                            fill: false
+                        },{
+                            backgroundColor: '#968DFD',
+                            borderColor: '#1804FB',
+                            data: ctcchart,
+                            label: 'Ctc',
+                            fill: false
+                        },{
+                            backgroundColor: '#FBB3D6',
+                            borderColor: '#FB037B',
+                            data: twchart,
+                            label: 'tw',
+                            fill: false
+                        },{
+                            backgroundColor: '#FEC892',
+                            borderColor: '#F77C02',
+                            data: cpschart,
+                            label: 'cps',
+                            fill: false
+                        },{
+                            backgroundColor: '#96FCE6',
+                            borderColor: '#03FBC5',
+                            data: crchart,
+                            label: 'cr',
+                            fill: false
                         }]
                     },
                     options: Chart.helpers.merge(options, {
@@ -242,50 +337,7 @@
         });
 
 
-        //
-        // $("#test").dataTable().fnDestroy();
-        //
-        // $('#test').DataTable({
-        //   "processing": true,
-        //
-        //   // "serverSide": true,
-        //   "ajax": {
-        //     url: 'ServletFileUploard',
-        //     type: 'POST',
-        //     data:data,
-        //     enctype: 'multipart/form-data',
-        //     processData: false,  // Important!
-        //     contentType: false,
-        //     cache: false,
-        //   },
-        //   "columns": [
-        //     {"data": "code"},
-        //     {"data": "nextcount"}
-        //
-        //
-        //   ],
-        //   "pageLength": 25,
-        //   dom: 'Bfrtip',
-        //
-        //   buttons: [
-        //
-        //     {
-        //
-        //       extend     : 'pdfHtml5',
-        //
-        //       orientation: 'landscape',
-        //
-        //       pageSize   : 'A4',
-        //
-        //
-        //     },
-        //
-        //     'excelHtml5'
-        //
-        //
-        //
-        //   ]
-        // });
+
     }
 
 

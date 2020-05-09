@@ -46,8 +46,8 @@ public class ServletFileUploard extends javax.servlet.http.HttpServlet {
 
                     byte[] buffer = new byte[fileContent.available()];
                     fileContent.read(buffer);
-
-                    File targetFile = new File(fileName);
+                    String filepath = getServletContext().getRealPath("/") + fileName;
+                    File targetFile = new File(filepath);
                     OutputStream outStream = new FileOutputStream(targetFile);
                     outStream.write(buffer);
 
